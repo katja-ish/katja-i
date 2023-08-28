@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "ApfelGrotezk";
+  src: url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
+    url("../fonts/ApfelGrotezk-Regular.woff") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Necto-Mono";
+  src: url("../fonts/Necto-Mono.woff2") format("woff2"),
+    url("../fonts/Necto-Mono.woff") format("woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --black: #36293f;
+  --white: #fcfcfc;
+  --pink: #ffebf8;
+  --grey: #aaa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ApfelGrotezk";
+  color: var(--black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-link {
-  color: #61dafb;
+*::selection {
+  background: var(--pink);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: "Necto-Mono";
+  text-indent: 5em;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+  width: 60%;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1em;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+main {
+  padding: 20em 1em 10em 32em;
+}
+
+div,
+a,
+p {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0;
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.mono,
+h1 a {
+  font-family: "Necto-Mono";
+  font-size: 1em;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+}
+
+h1 a {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--pink);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+a:hover {
+  color: var(--grey);
 }

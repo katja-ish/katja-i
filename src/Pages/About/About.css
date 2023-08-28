@@ -1,0 +1,45 @@
+.About {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  height: fit-content;
+  padding: 0 50vw;
+}
+
+.card {
+  font-family: "Necto-Mono";
+  border-radius: 1em;
+  border: 1px solid #f1f4f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90%;
+  margin-right: 1em;
+  flex: 0 0 28em;
+  transition: all 0.5s ease-in-out;
+  padding: 1em;
+  font-size: 0.7em;
+  height: fit-content;
+}
+
+.card p {
+  font-size: 1.4em;
+}
+
+/* cursor */
+
+.trail {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #aaaaaa33;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

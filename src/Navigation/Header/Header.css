@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  top: 0.8em;
+  left: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: calc(100vw - 2em);
+  height: fit-content;
+}
+
+.navigation a {
+  margin-left: 1em;
+  cursor: e-resize;
+}
+
+.navigation a.active {
+  color: var(--grey);
+  cursor: default;
+}
+
+.name:hover {
+  color: var(--black);
+}
