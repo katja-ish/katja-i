@@ -9,7 +9,7 @@ const Works = (props) => {
     const worksJSX = worksAscending.map((work, id) => (
         <div>
             {work.imagesCollection.items && work.imagesCollection.items.map((image, id) => 
-                <img src={image.url} key={work.id}  />
+                <img src={image.url} key={work.id} alt={image.url}  />
             )}
 
             <div className="note">

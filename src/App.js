@@ -30,7 +30,7 @@ const query = `
 function App() {
   const [work, setWork] = useState(null);
 
-  useEffect(() => {
+  useEffect((work) => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/7icdx8y8ymtm/`, {
         method: "POST",
