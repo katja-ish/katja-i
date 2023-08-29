@@ -30,7 +30,7 @@ video {
   height: fit-content;
 }
 
-button {
+.button {
   width: fit-content;
   border: none;
   text-decoration: none;
@@ -45,16 +45,16 @@ button {
   margin-left: 2em;
 }
 
-button:disabled {
+.button.disabled {
   background: #aaa;
   cursor: default;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.8;
 }
 
-button:disabled:hover {
+.button:disabled:hover {
   opacity: 1;
 }
 
@@ -71,7 +71,7 @@ button:disabled:hover {
     width: 100%;
   }
 
-  button {
+  .button {
     margin: 1.5em 0 0;
   }
 
