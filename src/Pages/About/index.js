@@ -14,9 +14,16 @@ function About() {
       "last thing i did was designing the Surreal app, a crypto wallet for NFTs. kind of story that i’m eager to tell more about."
   ]
 
+  const enterContainer = (e) => {
+    console.log("entered the container")
+    const container = document.querySelector('.cardsContainer');
+    const mouseX = e.pageX - container.offsetLeft;  // при первом входе получать значение container.scrollLeft 
+    console.log("mouseX: " + mouseX + "container.OffsetLeft: " + container.offsetLeft) // и добавлять его в mouseX: но только при первом входе в область.
+  }
+  
   const moveCards = (e) => {
     const container = document.querySelector('.cardsContainer');
-    const mouseX = e.pageX - container.offsetLeft; // problem is here. desirable behaviour: 1. first entering the container, the page should not be scrolling. 2. only after visibly moving right (like for 10-20 pixels, bc after entering user moves the cursor slightly) the function moveCards happens.)
+    const mouseX = e.pageX - container.offsetLeft; 
     const containerWidth = container.offsetWidth;
     const scrollWidth = container.scrollWidth;
     const percentX = mouseX / containerWidth;
@@ -25,12 +32,12 @@ function About() {
   };
 
   const aboutJSX = aboutData.map((data, i) => (
-    <div className="card"><p>{data}</p></div>
+    <div className="card" key={i}><p>{data}</p></div>
   ));
 
   return (
     <div className='About'>
-      <div className="cardsContainer" onMouseMove={moveCards} >
+      <div className="cardsContainer" onMouseEnter={enterContainer} onMouseMove={moveCards} >
         {aboutJSX}
         <></>
       </div>
