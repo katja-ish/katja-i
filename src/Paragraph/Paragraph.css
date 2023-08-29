@@ -5,9 +5,8 @@ section {
 
 @media only screen and (max-width: 1024px) {
   section {
-    padding: 12em 2em;
+    padding: 22em 1em 16em;
     display: flex;
-    justify-content: flex-end;
   }
 
   br {
