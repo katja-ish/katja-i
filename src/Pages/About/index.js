@@ -16,8 +16,8 @@ function About() {
 
   const enterContainer = (e) => {
     console.log("entered the container")
-    const container = document.querySelector('.cardsContainer');
-    const mouseX = e.pageX - container.offsetLeft;  // при первом входе получать значение container.scrollLeft 
+    const container = document.querySelector('.cardsContainer'); // при первом входе получать значение container.scrollLeft 
+    const mouseX = e.pageX - container.offsetLeft;  
     console.log("mouseX: " + mouseX + "container.OffsetLeft: " + container.offsetLeft) // и добавлять его в mouseX: но только при первом входе в область.
   }
   

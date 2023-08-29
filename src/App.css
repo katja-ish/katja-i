@@ -93,3 +93,29 @@ h1 a {
 a:hover {
   color: var(--grey);
 }
+
+@media only screen and (max-width: 1600px) {
+  main {
+    padding: 10em 1em 8em 16em;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  main {
+    padding: 10em 1em 8em 10em;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  main {
+    padding: 1em;
+  }
+
+  h1 {
+    text-indent: 4em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}

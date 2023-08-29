@@ -1,3 +1,16 @@
 section {
   padding: 20em 1em 1em 32em;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    padding: 12em 2em;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  br {
+    display: none;
+  }
 }

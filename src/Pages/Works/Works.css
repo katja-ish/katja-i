@@ -2,7 +2,7 @@ img,
 video {
   width: 100%;
   height: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   background: #f0f0ee;
 }
 
@@ -56,4 +56,32 @@ button:hover {
 
 button:disabled:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .note {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    margin: 0 0 10em;
+  }
+
+  .note .desc {
+    width: 100%;
+  }
+
+  button {
+    margin: 1.5em 0 0;
+  }
+
+  .tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .name {
+    margin: 0 0 1em;
+  }
 }
