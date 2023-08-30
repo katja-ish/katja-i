@@ -17,7 +17,12 @@ const query = `
         ctaText
         ctaUrl
         id
-        imagesCollection {
+        imagesCollection(limit: 5) {
+          items {
+            url
+          }
+        }
+        videosCollection(limit: 5) {
           items {
             url
           }
