@@ -36,10 +36,8 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // Authenticate the request
           Authorization: "Bearer 1oICBclP-7mG9WAqLCG23mIMOhOHK2TFaqJ-NfIJNfs",
         },
-        // send the GraphQL query
         body: JSON.stringify({ query }),
       })
       .then((response) => response.json())
@@ -48,14 +46,13 @@ function App() {
           console.error(errors);
         }
 
-        // rerender the entire component with new data
         setWork(data.workCollection);
         console.log(work)
       });
   }, []);
 
   if (!work) {
-    return "Loading...";
+    return <section><h1>Loading...</h1></section>
   }
 
   return (
