@@ -25,7 +25,7 @@ const Works = (props) => {
                 <div className="tag">{work.tag}</div>
                 <div className="desc">{work.body}</div>
 
-                { work.ctaText && <a className={"button"} href={work.ctaUrl} target='_blank'>{work.ctaText}</a> } 
+                { work.ctaText && <a className={"button"} href={work.ctaUrl} target="_blank" rel="noreferrer">{work.ctaText}</a> } 
             </div>
         </div>
     ));
