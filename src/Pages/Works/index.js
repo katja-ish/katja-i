@@ -18,7 +18,6 @@ const Works = (props) => {
             )}
 
             {work.imagesCollection.items && work.imagesCollection.items.map((image, id) => {
-                const cacheBypass = image.url.includes('?') ? '&cb=' : '?cb=';
             return (
                 <img
                 src={image.url}
