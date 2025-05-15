@@ -15,7 +15,7 @@
 .card {
   font-family: "Necto-Mono";
   border-radius: 1em;
-  border: 1px solid #f1f4f7;
+  border: 1px solid var(--white);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -30,6 +30,10 @@
 
 .card p {
   font-size: 1.4em;
+}
+
+.card:hover {
+  border: 1px dashed var(--white);
 }
 
 /* cursor */

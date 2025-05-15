@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "ApfelGrotezk";
-  src: url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
-    url("../fonts/ApfelGrotezk-Regular.woff") format("woff");
+  font-family: "BogartAltRegularTrial";
+  src: url("../fonts/BogartAltRegularTrial.woff") format("woff");
 }
 
 @font-face {
@@ -11,19 +10,25 @@
 }
 
 :root {
-  --black: #36293f;
-  --white: #fcfcfc;
+  --black: #391306;
+  --white: #ffffef;
   --pink: #ffebf8;
   --grey: #aaa;
+  --green: #00663f;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "ApfelGrotezk";
+  font-family: "BogartAltRegularTrial";
   color: var(--black);
-  background-color: var(--white);
+  background: linear-gradient(
+    180deg,
+    var(--white) 0%,
+    var(--pink) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
   -webkit-font-smoothing: antialiased;
 }
 

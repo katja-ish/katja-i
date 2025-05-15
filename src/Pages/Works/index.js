@@ -4,6 +4,7 @@ import Paragraph from '../../Paragraph';
 
 const Works = (props) => {
 
+
     const worksAscending = [...props.props.items].sort((a, b) => a.id - b.id);
 
     const worksJSX = worksAscending.map((work, id) => (
@@ -16,9 +17,16 @@ const Works = (props) => {
                 </video>
             )}
 
-            {work.imagesCollection.items && work.imagesCollection.items.map((image, id) => 
-                <img src={image.url} key={id} alt={image.url}  />
-            )}
+            {work.imagesCollection.items && work.imagesCollection.items.map((image, id) => {
+                const cacheBypass = image.url.includes('?') ? '&cb=' : '?cb=';
+            return (
+                <img
+                src={image.url}
+                key={id}
+                alt=""
+                />
+            );
+})}
 
             <div className="note">
                 <h2 className="name">{work.title} </h2>

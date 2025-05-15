@@ -3,7 +3,7 @@ video {
   width: 100%;
   height: auto;
   margin-bottom: 1em;
-  background: #f0f0ee;
+  background-color: white;
 }
 
 .note {
@@ -35,23 +35,24 @@ video {
   border: none;
   text-decoration: none;
   background: var(--black);
-  color: #fff;
-  padding: 1em 1.5em;
+  color: var(--white);
+  padding: 0.8em 1.5em;
   font-size: 0.8em;
-  border-radius: 2em;
+  border-radius: 0.6em;
   font-weight: 300;
   cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-left: 2em;
 }
 
 .button.disabled {
-  background: #aaa;
+  background: var(--grey);
   cursor: default;
 }
 
 .button:hover {
-  opacity: 0.8;
+  background: var(--green);
+  color: #fff;
 }
 
 .button:disabled:hover {
